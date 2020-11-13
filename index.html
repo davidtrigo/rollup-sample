@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <x-foo></x-foo>
+    <!-- 
+        TODO: dynamic imports polyfill for type module
+        TODO: systemjs for nomodule
+        https://philipwalton.com/articles/using-native-javascript-modules-in-production-today/
+     -->
+    <script type="module" src="dist/es/index.js"></script>
+    <script nomodule src="dist/iife/index.js"></script>
+</body>
+</html>
